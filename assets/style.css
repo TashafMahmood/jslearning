@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container .row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .row .col-md-5{
+  margin: 10px 10px;
+}
+
+.simple-calculate {
+  background-color: peachpuff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.simple-calculate input {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.notes{
+  margin: 20px;
+  padding: 20px;
+  background-color: green;
+  border-radius: 6px;
+  color: white;
+  text-align: left;
+}
+
+.used {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-btns {
+  margin-top: 20px;
+}
+
+.calc-btns button {
+  width: 40px;
+  height: 40px;
+}
+.answer {
+  background-color: transparent;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.calculate-square{
+  background-color: aquamarine;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.calculate-square h1{
+  margin-bottom: 30px;
+}
+
+.calculate-square input {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.calculate-square p{
+  font-size: 20px;
+  font-weight: 500;
+}

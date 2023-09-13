@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="assets/scripts/global.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="simple-calculate col-md-5">
+          SIMPLE CALCULATE USING DOM MANIPULATION
+          <div class="answer"><span id="calc-answer">----</span></div>
+          <input
+            type="number"
+            id="first-number"
+            placeholder="Enter first number"
+          /><br /><br />
+          <input
+            type="number"
+            id="second-number"
+            placeholder="Enter second number"
+          /><br />
+          <div class="calc-btns">
+            <button type="button" class="btn btn-primary" id="add-btn">
+              +
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="delete-btn"
+              onclick="deleteBtn()"
+            >
+              -
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="divide-btn"
+              onclick="divideBtn()"
+            >
+              %
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="multiply-btn"
+              onclick="multiplyBtn()"
+            >
+              x
+            </button>
+          </div>
+
+          <div class="notes">
+            I started the tutorial from here, refreshed the concept of DOM manipulation here, implemented with html, css, bootstrap, js here. Here I used addEventListner onclick.
+          </div>
+        </div>
+
+        <div class="col-md-5 calculate-square">
+          <h1>Calculate Square</h1>
+          <p id="result">---</p>
+          <input
+            type="number"
+            id="numberInput"
+            placeholder="Enter a number"
+          /><br /><br />
+          <button
+            onclick="calculateSquare()"
+            type="button"
+            class="btn btn-primary"
+          >
+            Calculate
+          </button>
+          <div class="notes">
+            Here I have used a direct function from js , instead of using addEventListner directly.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
