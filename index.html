@@ -60,14 +60,15 @@
           </div>
 
           <div class="notes">
-            I started the tutorial from here, refreshed the concept of DOM manipulation here, implemented with html, css, bootstrap, js here. Here I used addEventListner onclick.
+            I started the tutorial from here, refreshed the concept of DOM
+            manipulation here, implemented with html, css, bootstrap, js here.
+            Here I used addEventListner onclick.
           </div>
         </div>
 
         <div class="col-md-5 calculate-square">
           <h1>Calculate Square</h1>
           <p id="result">---</p>
-
 
           <input
             type="number"
@@ -82,10 +83,29 @@
             Calculate
           </button>
           <div class="notes">
-            Here I have used a direct function from js , instead of using addEventListner directly.
+            Here I have used a direct function from js , instead of using
+            addEventListner directly.
           </div>
         </div>
-        
+
+        <div class="col-md-5 object-example">
+          <div class="object-as-value">Javascript Objects</div>
+          <input type="text" placeholder="Enter first name" id="obj-firstname"/><br /><br />
+          <input type="text" placeholder="Enter last name" id="obj-lastname"/><br /><br />
+          <input type="text" placeholder="Enter phone number" id="obj-phone"/><br /><br />
+          <button
+            onclick="submitDataAsObject()"
+            type="button"
+            class="btn btn-light"
+          >
+            Add as object
+          </button>
+        </div>
+        <div class="col-md-5 object-example">
+          <input type="text" /><br /><br />
+          <input type="text" /><br /><br />
+          <input type="text" /><br /><br />
+        </div>
       </div>
     </div>
 

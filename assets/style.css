@@ -91,7 +91,7 @@ input[type="number"] {
   margin-bottom: 30px;
 }
 
-.calculate-square input {
+input {
   padding: 5px 10px;
   outline: none;
   border-radius: 4px;
@@ -100,4 +100,18 @@ input[type="number"] {
 .calculate-square p{
   font-size: 20px;
   font-weight: 500;
+}
+
+
+.object-example{
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+.object-example .object-as-value{
+  font-size: 32px;
+  font-weight: 500;
+  color:white;
+  margin-bottom: 30px;
 }

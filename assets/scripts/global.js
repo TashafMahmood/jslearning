@@ -63,3 +63,13 @@ function calculateSquare() {
     alert("Please enter a valid number.");
   }
 }
+
+
+// Set the value as object
+function submitDataAsObject(){
+    const firstname = document.getElementById('obj-firstname')
+    const lastname = document.getElementById('obj-lastname')
+    const phone = document.getElementById('obj-phone')
+
+    alert({firstname: firstname, lastname: lastname, phone:phone})
+}
