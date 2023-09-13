@@ -104,14 +104,15 @@ input {
 
 
 .object-example{
-  background-color: red;
+  background-color: rgb(255, 182, 182);
   text-align: center;
   padding: 20px;
+  border-radius: 8px;
 }
 
 .object-example .object-as-value{
   font-size: 32px;
   font-weight: 500;
-  color:white;
+  color:rgb(0, 0, 0);
   margin-bottom: 30px;
 }

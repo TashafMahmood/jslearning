@@ -64,12 +64,24 @@ function calculateSquare() {
   }
 }
 
-
 // Set the value as object
-function submitDataAsObject(){
-    const firstname = document.getElementById('obj-firstname')
-    const lastname = document.getElementById('obj-lastname')
-    const phone = document.getElementById('obj-phone')
+function submitDataAsObject() {
+  const firstname = document.getElementById("obj-firstname");
+  const lastname = document.getElementById("obj-lastname");
+  const phone = document.getElementById("obj-phone");
 
-    alert({firstname: firstname, lastname: lastname, phone:phone})
+  if (firstname.value !=="" && lastname.value !=="" && phone.value !=="") {
+    alert(
+      JSON.stringify({
+        firstname: firstname.value,
+        lastname: lastname.value,
+        phone: phone.value,
+      })
+    );
+    firstname.value= '';
+    lastname.value='';
+    phone.value=''
+  }else{
+    alert('Fields cannot be empty')
+  }
 }
