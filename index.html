@@ -90,9 +90,21 @@
 
         <div class="col-md-5 object-example">
           <div class="object-as-value">Javascript Objects</div>
-          <input type="text" placeholder="Enter first name" id="obj-firstname"/><br /><br />
-          <input type="text" placeholder="Enter last name" id="obj-lastname"/><br /><br />
-          <input type="number" placeholder="Enter phone number" id="obj-phone"/><br /><br />
+          <input
+            type="text"
+            placeholder="Enter first name"
+            id="obj-firstname"
+          /><br /><br />
+          <input
+            type="text"
+            placeholder="Enter last name"
+            id="obj-lastname"
+          /><br /><br />
+          <input
+            type="number"
+            placeholder="Enter phone number"
+            id="obj-phone"
+          /><br /><br />
           <button
             onclick="submitDataAsObject()"
             type="button"
@@ -102,13 +114,75 @@
           </button>
 
           <div class="notes">
-            Here I have used data type as object, and takes the user input and save it as Javascript key-value pairs.
+            Here I have used data type as object, and takes the user input and
+            save it as Javascript key-value pairs.
           </div>
         </div>
-        <div class="col-md-5 object-example">
-          <input type="text" /><br /><br />
-          <input type="text" /><br /><br />
-          <input type="text" /><br /><br />
+
+        <!-- ARRAY EXAMPLE -->
+        <div class="col-md-5 array-example">
+          <div class="array-as-value">Javascript Arrays</div>
+          <i> ['MANGO', 'APPLE', 'ORANGE', 'BANANA', 'PINEAPPLE'] </i>
+          <br /><br />
+          <ol>
+            <li>Mango</li>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Pineapple</li>
+          </ol>
+
+          <div class="notes">
+            Here I have used array, its indexing starts with 0, so array of
+            fruits look like this, and we just display it as a list.
+          </div>
+        </div>
+
+        <!-- SECTION 4 STARTS HERE -->
+
+        <!-- 1. IF-ELSE EXAMPLE -->
+
+        <div class="voting-if-else col-md-5">
+          <h1>IF-ELSE EXAMPLE</h1>
+          <input
+            type="number"
+            placeholder="Enter your age"
+            id="ageforvoting"
+          /><br /><br />
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="votingEligibility()"
+          >
+            Check your eligibility
+          </button>
+          <div class="notes">
+            Here I have used if-else and nested if-else logics, as well as AND
+            operator (logical operator)
+          </div>
+        </div>
+
+        <div class="switch-case col-md-5">
+          <h1>SWITCH CASE STATEMENT</h1>
+          <h4>Fruit Information</h4>
+          <label for="fruitSelect">Select a fruit:</label>
+          <select id="fruitSelect">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+            <option value="orange">Orange</option>
+            <option value="pear">Pear</option>
+          </select>
+          <div id="fruitInfo"></div>
+          <div class="notes">
+            In this example I have used switch-statement to get the fruit
+            description.
+          </div>
+        </div>
+
+        <!-- Resuming from here -->
+        <div class="oops">
+          <a href="./oop008/oops.html">Practice OOP & Classes</a>
         </div>
       </div>
     </div>

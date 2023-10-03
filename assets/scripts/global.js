@@ -70,7 +70,7 @@ function submitDataAsObject() {
   const lastname = document.getElementById("obj-lastname");
   const phone = document.getElementById("obj-phone");
 
-  if (firstname.value !=="" && lastname.value !=="" && phone.value !=="") {
+  if (firstname.value !== "" && lastname.value !== "" && phone.value !== "") {
     alert(
       JSON.stringify({
         firstname: firstname.value,
@@ -78,10 +78,63 @@ function submitDataAsObject() {
         phone: phone.value,
       })
     );
-    firstname.value= '';
-    lastname.value='';
-    phone.value=''
-  }else{
-    alert('Fields cannot be empty')
+    firstname.value = "";
+    lastname.value = "";
+    phone.value = "";
+  } else {
+    alert("Fields cannot be empty");
   }
 }
+
+function submitDataAsArray() {
+  const firstname = document.getElementById("arr-firstname");
+  const arrList = document.getElementById('array_list')
+  const arr = []
+  arr.push(firstname.value)
+
+  arrList.innerHTML = arr
+}
+
+function votingEligibility(){
+  const age = document.getElementById('ageforvoting')
+  if(age.value>=18 && age.value<=120){
+    alert('YOU ARE ELIGIBLE TO VOTE')
+    age.value=""
+  }else if(age.value<18 && age.value>=1){
+    alert('YOU ARE NOT ELIGIBLE TO VOTE')
+    age.value=""
+  }else{
+    alert('INVALID INPUT')
+    age.value=""
+  }
+}
+
+// SWITCH CASE LOGIC
+document.addEventListener("DOMContentLoaded", function () {
+  const fruitSelect = document.getElementById("fruitSelect");
+  const fruitInfo = document.getElementById("fruitInfo");
+
+  fruitSelect.addEventListener("change", function () {
+      const selectedFruit = fruitSelect.value;
+      
+      switch (selectedFruit) {
+          case "apple":
+              fruitInfo.textContent = "Apples are a popular fruit.";
+              break;
+          case "banana":
+              fruitInfo.textContent = "Bananas are rich in potassium.";
+              break;
+          case "cherry":
+              fruitInfo.textContent = "Cherries are small, red fruits.";
+              break;
+          case "orange":
+              fruitInfo.textContent = "Oranges are a good source of vitamin C.";
+              break;
+          case "pear":
+              fruitInfo.textContent = "Pears are a sweet and juicy fruit.";
+              break;
+          default:
+              fruitInfo.textContent = "Please select a fruit.";
+      }
+  });
+});
