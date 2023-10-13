@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  #todoInput {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  #addButton, #clearButton {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  #todoList {
+    margin-top: 20px;
+  }
+  
